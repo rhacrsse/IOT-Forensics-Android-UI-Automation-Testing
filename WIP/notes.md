@@ -41,8 +41,14 @@ Stato dell’Arte sui sistemi per automatizzare il testing di un’applicazione 
 
 **Towards Labeling On-Demand IoT Traffic**
 \
-[https://doi.org/10.1145/3474718.3474727](https://doi.org/10.1145/3474718.3474727) Analysis of the Activities of Daily Living (ADLs), in a smart home environment [https://doi.org/10.3390/data3020011](https://doi.org/10.3390/data3020011)
+[https://doi.org/10.1145/3474718.3474727](https://doi.org/10.1145/3474718.3474727)
 
+
+**SIMADL: Simulated Activities of Daily Living Dataset**
+\
+Analysis of the Activities of Daily Living (ADLs), in a smart home environment
+\
+[https://doi.org/10.3390/data3020011](https://doi.org/10.3390/data3020011)
 
 **Simulation of Smart Home Activity Datasets**
 \
