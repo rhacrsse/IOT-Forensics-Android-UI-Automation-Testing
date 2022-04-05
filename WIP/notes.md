@@ -32,27 +32,33 @@ Stato dell’Arte sui sistemi per automatizzare il testing di un’applicazione 
 **A Survey on the Internet of Things (IoT) Forensics: Challenges, Approaches, and Open Issues**
 \
 [https://ieeexplore.ieee.org/document/8950109](https://ieeexplore.ieee.org/document/8950109)
-\
+
+
 **Forensic Analysis of digital evidence extracted from Amazon Echo**
 \
 [https://ieeexplore.ieee.org/document/9398391](https://ieeexplore.ieee.org/document/9398391)
-\
+
+
 **Towards Labeling On-Demand IoT Traffic**
 \
 [https://doi.org/10.1145/3474718.3474727](https://doi.org/10.1145/3474718.3474727) Analysis of the Activities of Daily Living (ADLs), in a smart home environment [https://doi.org/10.3390/data3020011](https://doi.org/10.3390/data3020011)
-\
+
+
 **Simulation of Smart Home Activity Datasets**
 \
 [https://doi.org/10.3390/s150614162](https://doi.org/10.3390/s150614162)
-\
+
+
 **User activity recognition for energy saving in smart homes**
 \
 [https://doi.org/10.1016/j.pmcj.2014.08.006](https://doi.org/10.1016/j.pmcj.2014.08.006)
-\
+
+
 **Multi-user activity recognition: Challenges and opportunities**
 \
 [https://doi.org/10.1016/j.inffus.2020.06.004](https://doi.org/10.1016/j.inffus.2020.06.004)
-\
+
+
 **Your Smart Home Can't Keep a Secret: Towards Automated Fingerprinting of IoT Traffic**
 \
 [https://doi.org/10.1145/3320269.3384732](https://doi.org/10.1145/3320269.3384732)
@@ -189,7 +195,8 @@ When a crash is detected, CRASHSCOPE generates an augmented crash report contain
 *keywords: MONKEYRUNNER*
 
 **Practical GUI Testing of Android Applications Via Model Abstraction and Refinement**
-[https://doi.org/10.1109/ICSE.2019.00042(https://doi.org/10.1109/ICSE.2019.00042](https://doi.org/10.1109/ICSE.2019.00042(https://doi.org/10.1109/ICSE.2019.00042)
+\
+[https://doi.org/10.1109/ICSE.2019.00042](https://doi.org/10.1109/ICSE.2019.00042)
 * APE
 
 **Stoat Prototype**
@@ -348,9 +355,6 @@ reusing existing UI tests from an app to automatically generate new tests for ot
 - machine learning technique per riprodurre UI Tests
 - molti paper trattano (monkey, ui automator, monkeyrunner), appium, espresso
 
-\
-\
-\
 
 # INCONTRO MARCH 17TH, 2022
 
@@ -366,16 +370,16 @@ Ti direi di scremarli guardando abstract/conclusioni e rimuovendo quelli che ti 
 
 ## OBIETTIVO
 
-## AUTOMATED UI TEST TOOLS #
+## AUTOMATED UI TEST TOOLS
 Dato che svilupperemo per Android partiamo dal suo IDE, Android Studio, e vediamo cosa offre lato AUTOMATED UI TESTING
 
 ## HOW TO TEST APPS ANDROID STUDIO / CLI USER GUIDE: [https://developer.android.com/studio/test](https://developer.android.com/studio/test) ##
 Description of the various tools that help you create, configure, and run your tests from Android Studio or the command line.
 
-## TEST IN ANDROID STUDIO ###
+## TEST IN ANDROID STUDIO 
 basic testing, constraint => you need the source code of the app to be tested.
 
-## TEST FROM THE COMMAND LINE ###
+## TEST FROM THE COMMAND LINE
 mode fine-grained control testing, but same constraint of previous point.
 
 ## ADVANCING TEST SETUP ###
