@@ -33,7 +33,6 @@ Stato dell’Arte sui sistemi per automatizzare il testing di un’applicazione 
 \
 [https://ieeexplore.ieee.org/document/8950109](https://ieeexplore.ieee.org/document/8950109)
 
-
 **Forensic Analysis of digital evidence extracted from Amazon Echo**
 \
 [https://ieeexplore.ieee.org/document/9398391](https://ieeexplore.ieee.org/document/9398391)
@@ -490,10 +489,12 @@ UI Automator and Espresso have some feature overlap but Espresso has more synchr
 
 **ANDROID STUDIO AUTOMATED TESTING SAMPLES ESPRESSO / UI AUTOMATOR**
 \
-[https://githubi.com/android/testing-samples](https://githubi.com/android/testing-samples)
+[https://github.com/android/testing-samples](https://github.com/android/testing-samples)
 
 __(BOOKMARK)__
+\
 **AUTOMATE UI TESTS: [https://developer.android.com/training/testing/instrumented-tests/ui-tests](https://developer.android.com/training/testing/instrumented-tests/ui-tests)**
+\
 __(BOOKMARK)__
 
 ### COMPOSE: [https://developer.android.com/jetpack/compose/testing](https://developer.android.com/jetpack/compose/testing)
@@ -518,3 +519,14 @@ __USIAMO PHYSICAL DEVICE COLLEGATO AD ANDROID STUDIO__
 [https://stackoverflow.com/questions/7022527/how-to-click-a-view-of-android-program-through-monkeyrunner](https://stackoverflow.com/questions/7022527/how-to-click-a-view-of-android-program-through-monkeyrunner) 
 
 ## Ridurre numero di paper
+
+# INCONTRO APRIL 12TH, 2022
+
+## PRESENTI: Fabio, Alessandro
+
+## PUNTI SALIENTI:
+1. 1 test con + app gestire o + test da orchestratore ognuno per 1 app o disp gestito
+2. Orchestrare i test con scheduling temporale e esecuzione sequenziale per test deterministico per riprodurre comportamento umano o test random.
+3. Provare a usare e creare un emulatore android anche di android studio o macchina virtuale
+4. Mappare tutte le possibili interazioni che si possono avere con l'oggetto vanno mappate (e.g. x la lampadina Smart Bulb di Tapo, on/off, cambio colore e cambio luminosità.
+5. Scrivere un log file con aioni automatiche che il test sta facendo x avere una GROUD TRUTH in sfruttare in seconda analisi x la parte di classificazione (e.g. TIMESTAMP APP TIPO\_ATTIVITA'
