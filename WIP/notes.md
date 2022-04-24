@@ -530,3 +530,8 @@ __USIAMO PHYSICAL DEVICE COLLEGATO AD ANDROID STUDIO__
 3. Provare a usare e creare un emulatore android anche di android studio o macchina virtuale
 4. Mappare tutte le possibili interazioni che si possono avere con l'oggetto vanno mappate (e.g. x la lampadina Smart Bulb di Tapo, on/off, cambio colore e cambio luminosità.
 5. Scrivere un log file con aioni automatiche che il test sta facendo x avere una GROUD TRUTH in sfruttare in seconda analisi x la parte di classificazione (e.g. TIMESTAMP APP TIPO\_ATTIVITA'
+
+Per connettere il dispositivo all'emulatore android basta prima associarlo tramite un dispositivo hardware fisico dopo di che sara associato alla rete e si potra' proseguire dall'emulatore per tutti i test necessari.
+In questo caso il primo pairing alla ret Wi-Fi viene gestito da iPhone personale. Da capire se tale pairing può essere fatto direttamente da emulatore senza passare da smartphone.
+
+
