@@ -387,12 +387,13 @@ basic testing, constraint => you need the source code of the app to be tested.
 ## TEST FROM THE COMMAND LINE
 mode fine-grained control testing, but same constraint of previous point.
 
-## ADVANCING TEST SETUP ###
+## ADVANCING TEST SETUP
 to override default settings, configure Gradle options, or refactor your code so that tests are separated in their own module.
 
-## OTHER TESTING TOOLS ###
+## OTHER TESTING TOOLS
 
 ### Espresso Test Recorder: [https://developer.android.com/studio/test/other-testing-tools/espresso-test-recorder](https://developer.android.com/studio/test/other-testing-tools/espresso-test-recorder)
+### FUNZIONA SOLO SU NUOVE APP SVILUPPATE TRAMITE ANDROID STUDIO, NON PERMETTE DI ISPEZIONARE APP PREESISTENTI
 The Espresso Test Recorder tool lets you create UI tests for your app without writing any test code.
 \
 By recording a test scenario, you can record your interactions with a device and add assertions to verify UI elements in particular snapshots of your app.
@@ -529,9 +530,28 @@ __USIAMO PHYSICAL DEVICE COLLEGATO AD ANDROID STUDIO__
 2. Orchestrare i test con scheduling temporale e esecuzione sequenziale per test deterministico per riprodurre comportamento umano o test random.
 3. Provare a usare e creare un emulatore android anche di android studio o macchina virtuale
 4. Mappare tutte le possibili interazioni che si possono avere con l'oggetto vanno mappate (e.g. x la lampadina Smart Bulb di Tapo, on/off, cambio colore e cambio luminosità.
-5. Scrivere un log file con aioni automatiche che il test sta facendo x avere una GROUD TRUTH in sfruttare in seconda analisi x la parte di classificazione (e.g. TIMESTAMP APP TIPO\_ATTIVITA'
+5. Scrivere un log file con azioni automatiche che il test sta facendo x avere una GROUD TRUTH da sfruttare in seconda analisi x la parte di classificazione (e.g. TIMESTAMP APP TIPO\_ATTIVITA'
 
 Per connettere il dispositivo all'emulatore android basta prima associarlo tramite un dispositivo hardware fisico dopo di che sara associato alla rete e si potra' proseguire dall'emulatore per tutti i test necessari.
 In questo caso il primo pairing alla ret Wi-Fi viene gestito da iPhone personale. Da capire se tale pairing può essere fatto direttamente da emulatore senza passare da smartphone.
 
+### COMMAND LINE UI INSTRUMENTED TEST
+install java 11 
+PROJECT\_NAME="MyApplication"
+PROJECT\_PATH="/Users/angelo/AndroidStudioProjects/${PROJECT\_NAME}"
+${PROJECT\_PATH}/gradlew connectedAndroidTest
+${PROJECT\_PATH}/gradlew cAT
+PROJECT\_SRC="/Users/angelo/AndroidStudioProjects/MyApplication/app/src/androidTest/java/com/example/myapplication"
+TESTFILE="${PROJECT\_SRC}/ExampleInstrumentedTest.kt"
 
+### First step: produce kotlin script files
+### Re-engineerized the software creating classes for specific test use cases and ranmdoly run in another class test.
+NB: l'app TAPO da emulatore qemu android funziona benissimo, mentre l'app EZVIZ ogni tanto in maniera casuale crasha all'avvio e dopo 3/4 tentativi si apre correttamente.
+Per questo motivo per iniziare i test:
+1. Avvio Emulatore
+2. Apro le 2 applicazioni verificando che venga visualizzata la schermata HOME rispettiva e poi le lascio in background e torno nella HOME ANDDROID.
+3. Faccio partire il TEST vero e proprio.
+4. Ricordarsi prima di far partire il test di settare correttamente lo stato delle lampadine (TO-DO: verificare se lo stato si possa passare come parametro da cmd.
+
+# KOTLIN COMPILER
+/Users/angelo/Library/Application Support/Google/AndroidStudio2021.2/plugins/Kotlin/kotlinc/bin
