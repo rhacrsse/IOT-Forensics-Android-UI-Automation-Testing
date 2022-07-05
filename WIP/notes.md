@@ -547,6 +547,7 @@ TESTFILE="${PROJECT\_SRC}/ExampleInstrumentedTest.kt"
 ### First step: produce kotlin script files
 ### Re-engineerized the software creating classes for specific test use cases and ranmdoly run in another class test.
 NB: l'app TAPO da emulatore qemu android funziona benissimo, mentre l'app EZVIZ ogni tanto in maniera casuale crasha all'avvio e dopo 3/4 tentativi si apre correttamente.
+Inolte l'app EZVIZ fa fatica all'avvio quindi andrebbe verificata l'apertura della schermata iniziale e delle varie sotto schermate di gestione dei vari componenti (e.g. bulb, camera e plug) prima di iniziare con i test che generano interazioni casuali o il più causale possibile.
 Per questo motivo per iniziare i test:
 1. Avvio Emulatore
 2. Apro le 2 applicazioni verificando che venga visualizzata la schermata HOME rispettiva e poi le lascio in background e torno nella HOME ANDDROID.

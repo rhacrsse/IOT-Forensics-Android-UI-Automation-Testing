@@ -28,14 +28,15 @@ class Client(address: String, port: Int) {
     fun run() {
         thread { read() }
         while (connected) {
-            val input = readLine() ?: ""
-            if ("exit" in input) {
-                connected = false
-                reader.close()
-                connection.close()
-            } else {
-                write(input)
-            }
+            //val input = readLine() ?: ""
+            //if ("exit" in input) {
+            //    connected = false
+            //    reader.close()
+            //    connection.close()
+            //} else {
+            //    write(input)
+            //}
+            write("pino")
         }
 
     }
