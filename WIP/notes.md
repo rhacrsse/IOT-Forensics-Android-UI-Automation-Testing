@@ -559,3 +559,12 @@ Per questo motivo per iniziare i test:
 
 # GENYMOTION (VM Virtualbox)
 Tentativo fatto per verificare le prestazioni rispetto a qemu, sono simili e in più dall'App Store non è possibile scaricare le app Tapo e EZVIZ, quindi non è possibile fare i test. Opzione scartata
+
+# START EMULATOR QEMU FROM CMD
+cd $ANDROID\_SDK/tools
+./emulator -list-avds
+./emulator @Automator -gpu on -no-boot-anim
+
+# CONNECT NOX PLAYER TO ADB
+adb connect 127.0.0.1:62001
+adb disconnect
