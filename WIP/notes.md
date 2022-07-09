@@ -556,3 +556,6 @@ Per questo motivo per iniziare i test:
 
 # KOTLIN COMPILER
 /Users/angelo/Library/Application Support/Google/AndroidStudio2021.2/plugins/Kotlin/kotlinc/bin
+
+# GENYMOTION (VM Virtualbox)
+Tentativo fatto per verificare le prestazioni rispetto a qemu, sono simili e in più dall'App Store non è possibile scaricare le app Tapo e EZVIZ, quindi non è possibile fare i test. Opzione scartata
