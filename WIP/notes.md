@@ -558,7 +558,7 @@ Per questo motivo per iniziare i test:
 /Users/angelo/Library/Application Support/Google/AndroidStudio2021.2/plugins/Kotlin/kotlinc/bin
 
 # GENYMOTION (VM Virtualbox)
-Tentativo fatto per verificare le prestazioni rispetto a qemu, sono simili e in più dall'App Store non è possibile scaricare le app Tapo e EZVIZ, quindi non è possibile fare i test. Opzione scartata
+Tentativo fatto per verificare le prestazioni rispetto a qemu, sono simili e in più dall'App Store non è possibile scaricare le app Tapo e EZVIZ, quindi non è possibile fare i test. Opzione scartata. usa versione a 32 bit probabilmente.
 
 # START EMULATOR QEMU FROM CMD
 cd $ANDROID\_SDK/tools
@@ -568,3 +568,23 @@ cd $ANDROID\_SDK/tools
 # CONNECT NOX PLAYER TO ADB
 adb connect 127.0.0.1:62001
 adb disconnect
+
+# INCONTRO July 12TH, 2022
+## PRESENTI: Fabio
+
+- inserire device in log file -> fatto
+- tutto ok quello fatto finora
+- creare classi e gestire smart plug -> fatto
+- provare a usare noxplayer invece che qemu android studio -> funzione
+
+# Per problemi DateTimeFormatter quando uso NoxPlayer che ha API 29 SDK Java
+# https://stackoverflow.com/questions/52510370/java-lang-noclassdeffounderror-failed-resolution-of-ljava-time-localdate-erro#52510417
+
+# INCONTRO July 27TH, 2022
+## PRESENTI: Fabio
+
+- aggiungere metodo che esegue le interazioni in maniera sequenziale e non random, 1 seq per tutte le interazioni.
+- preparare una guida per il nuovo device e nuova applicazione (come se chi dovesse fare questa operazione non richieda conoscenze di programmazione, o in modo tale che sia semplice questa fase evitando la complessita' e il mio sforzo). elenco puntato cose da fare per l'implementazione. provare a spostare logica implementazione su logica file di configurazione tipo yaml/json. l'unico problema in questo caso e' che bisogna definire anche le funzionalita da attivare (e.g. accendi, spegni, cambia colore, etc), e se usare i pixel, quindi la dimensione, oppure resourceID. Potrei creare uno script bash che legge il file yaml/json e crea le classi .kt. Questo e' il primo step. il secondo e' l'esecuzione. Bisogna creare anche il progetto in Android Studio prima. Creare anche un altro file di configurazione dove dici che classi instanziare e se lanciare il comando in maniera sequenziale o random. Quindi la soluzione potrebbe essere uno script bash che crea la classe .kt e poi tu la inserisci all'interno del progetto in Android Studio. Nella configurazione potrei mettere il path da eseguire per svolgere l'azione dove i nodi del grafo descrivono o un resourceid da cercare oppure dei pixel su cui cliccare (e.g. Tapo -> ALL -> Smart Bulbs -> \[10x10\]\[20x20\]) e poi specificare anche l'azione da eseguire, cioe' click,drag,swipe). Al posto delle frecce potrei anche per esempio definirli come una lista di oggetti chiave,valore da eseguire in sequenza per ottenere il risultato voluto all'interno dello yaml.
+- iniziare a simulare per 24/48 ore i device vedere nel frattempo cosa succede al traffico di rete, provare a fare il test con una lampadina.
+- provare a studiare il traffico in base agli eventi generati.
+- installare il tutto su pc lab e lavorare in lab.
